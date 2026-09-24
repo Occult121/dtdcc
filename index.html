@@ -1,0 +1,130 @@
+<html> 
+<head> 
+</head>
+<body> 
+<marquee behavior ="scroll" direction ="down"> <h1><b> DATA WAREHOUSE , DATA  MINING </b></h1></marquee><br> 
+<h2><nav> 
+<ul type="square">
+<li><a href="#spatial"> spatial databases </a></li> 
+<li><a href="#dm"> data mining , web mining </a></li> 
+<li><a href="#dwh"> DATA WAREHOUSE ARCHITECTURE </a></li> 
+<li><a href="#data-discretization">DATA DISCRETIZATION </a></li> 
+<li><a href="#ETL"> ETL</a></li>
+<li><a href="#OLAP">OLAP </a></li> 
+<li><a href="#update">QUERY , UPDATE-DRIVEN </a></li> 
+<li><a href="#attributes"> ATTRIBUTES </a></li> 
+<li><a href="#dmc"> TYPES OF DATA MINING </a></li> 
+</ul> 
+</nav></h2><br> 
+<br>
+<section id="spatial"> 
+	Spatial databases and text databases --- spatial databases are derived from geospatial consortium and used to draw 3d geometric shapes, add onto or modify existing 3d geometric shapes, have observer re and endowed with 3d spatial indexes .<br> 
+text databases are available in word and texts and respond to Ad Hoc queries <br><br> 
+<a target="_blank" href="https://www.geeksforgeeks.org/dbms/spatial-and-geographical-data/"><img src="https://media.geeksforgeeks.org/wp-content/uploads/20251209160152816377/Spatial-Data.webp" alt ="g" width="350"  height="350"></a> 
+<br><br></section> 
+<br> 
+<section id="dm"> 
+	While data mining ---offline structured text and numeric data where patterns matching <br> 
+  web mining ---online unstructured and semi structured text and numeric data where no pattern matching . web usage mining<br> 
+ where web data stored in web logs , web content mining --- semi structured hyper link of www And web structure mining ----<br>
+ Page layout of www.challenges in web mining --- data segmentation,customers accessibility <br> 
+</section> 
+<br><br> 
+<section id="dwh"> 
+	A dwh [data warehouse] performs only query and analysis , dwh is essentially subject oriented –non volatile –integrated – time variant --- historical data .advocates BI ,there are some differences between a dwh and OLTP database as follows : <br> 
+ <table width="60%"  border="2"> 
+<thead> 
+<tr> 
+<th>Dwh</th><th> 	OLTP </th></tr></thead> 
+<tbody> 
+<tr><td> 
+
+Query , analysis </td><td>	Transaction processing </td></tr> 
+<tr><td> 
+De normalized tables </td><td>	Normalized tables</td></tr> 
+<tr><td>  
+Historical data </td><td>	Transient data </td></tr> 
+<tr><td> 
+BI ,data mining </td><td> 	Transactions processing index </td></tr> 
+<tr><td>
+Slice and dice data </td><td>	Unlike </td></tr> 
+<tr><td>
+Roll up data , drill down </td><td>	Unlike </td></tr> 
+<tr><td> 
+Real time , federated , distributed </td><td>	Data marts </td></tr> 
+<tr><td>
+e.gs Erwin, cognos , power builder , informatica </td><td>	e.gs data marts</td></tr> 
+<tr><td colspan="2">  
+OLAP based on dwh performs faster data indexing unlike OLTP </td></tr></tbody> 
+</table> 
+
+
+	A dwh --- 3 tier layered architecture that has following layers ---bottom layer --- centralized RDBMS servers and MD DBMS that has parallel processing and improved scalability . middle layer has OLAP servers . top layer has user programs that interact with OLAP servers 
+<br>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzzPzP9c6Ss3zLjbYPuJK8is5erD3ug-5iyoX72--w8g&s=10" alt="g" width="350" height="350"> 
+<br>
+</section> 
+<br><br> 
+<section id="data-discretization"> 
+a continuous range of attributes in splitting , merging and concept hierarchy that provides a hierarchy of attributes , used in dimensional data reduction , data granularity levels <br> 
+</section> 
+<br><br> 
+<section id="ETL"> 
+imp pre processing in case of data staging and data acquisition components of a dwh and data mining . <br> 
+enunciation to ETL is data cleaning that entails noise removal. The data is then extracted from dwh ->  a database .<br>
+ extracted data is transformed .during load of data , the dwh is essentially offline . 3 types of load include --- initial, incremental loads and full refresh . incremental load where changes reflected increment wise<br> 
+ and initial load where all tables get a full refresh <br><br> 
+</section>
+<br><br> 
+<section id="OLAP"> 
+online analytical processing performs only query and analysis --- faster indexing to precomputed summarized data <br> 
+---- de normalized tables ---- historical data --- operational intelligence ---- slice + dice data or performs projections<br>
+ along dimensions of data cubes ---- roll up data , drill down ---- OLAP Servers --- rolap, molap, holap. Rolap more scalable less flexible than molap. Molap where if numbers of dimensions of data cubes > 3 are poly cubes and storage in   array multi dimensional storage search engines . molap less scalable more flexible than rolap. Holap includes higher scalability of rolap + higher flexibility of molap servers --- OLAP  e.gs Erwin , cognos , power builder , informatica <br> 
+---- OLAP  in  conformity of FASMI  principles <br><br> 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXLmU4-E4frAeHH2fB70L5MZ0FJejq-F50473oZIwMEA&s=10" alt ="g" width="350" height="350"> 
+<br><br> 
+</section> 
+<br><br> 
+<section id="update">
+---- query --- work on  heterogeneous databases and use wrapper and mediator   classes , more expensive , less scalable. Update ---- work on heterogeneous databases, instead of wrappers / mediators , data stored in separate warehouses prior to processing , more scalable less expensive <br> 
+</section> 
+<br><br> 
+<section id="attributes"> 
+	Types of attributes --- <br>
+1.	 Nominal attributes --- data order is not imp though imp is difference in  data intervals <br>
+2.	Ordinal attributes --- data order is imp though not imp is difference in   data intervals <br>
+3.	Interval attributes --- imp is data order + difference in  data intervals<br> 
+4.	Ratio attributes ----imp is data order , difference in   data intervals and a 0.0 where 0.0 = no data <br><br> 
+</section> 
+<br><br> 
+<section id="dmc">
+	Types of data mining --- <br>
+a.	Data characterization --- target attributes of a data sample or population <br> 
+b.	Data discrimination  --- target attributes of a data sample against contrary data<br> 
+c.	Association  rule mining --- freq patterns + correlated data , uses support endowed with support count ,<br>
+ confidence where antecedent foll.consequent and general measure lift , that finds rule interestingness ,0 <lift<1. <br>
+All strong association rules are not interesting and correlation  does not imply causation .<br>
+ Apriori   property => mean of sum of sequential patterns  < sequential subpaterns .   Apriori algorithm uses join and prune<br>
+ where In join , link each of k+1 items from k – data to itself , in   prune , iterates in  k no of passes <br>
+
+d.	Classification ----discrete unordered data , causes grouping of similar data. Unlike eager type ,<br>
+ lazy classification  = unsupervised learning where target attributes or end result not explicit .<br>
+ unlike eager classifiers lazy classifiers deal with complex data e.gs of eager classifiers --- Bayesian, decision  tree e.gs <br>
+of lazy classifiers ---clustering ,CBR<br>
+e.	Regression  --- past e.gs , linear regression  --- st line between 1 predictor and 1 response variables ,<br>
+ non linear regression  --- quadratic equation   between 2 or more predictors and 1 response variable <br>
+f.	Clustering --- a hierarchical data decomposition , agglomerative , divisive and k means classification  that work on  <br>
+labeled    data <br>
+g.	Outliers analysis--- clustering is preferred than regression <br><br>
+</section> 
+<br><br><br> 
+<footer> 
+<h2> webpage designed by <a target="_blank" href="#RATUL">RATUL</a> 
+</h2><br> 
+</footer> 
+<br></body> 
+</html> 
+ 
+
+
+
